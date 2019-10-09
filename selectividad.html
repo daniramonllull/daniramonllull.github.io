@@ -1,21 +1,28 @@
 <html>
     <head>
-<script type="text/javascript">
-function calcula_nota_BO(){
+            <link rel="stylesheet" type="text/css" href="estilos.css">
+            <script type="text/javascript">
+            function calcula_nota_BO(){
 
-    var nota_BO1 = parseInt(document.getElementById('NOTA_BO_1').value);    
-    var nota_BO2 = parseInt(document.getElementById('NOTA_BO_2').value);
-    var nota_BO3 = parseInt(document.getElementById('NOTA_BO_3').value);
-    var nota_BO4 = parseInt(document.getElementById('NOTA_BO_4').value);
-    
-    var nota_BO_media = (nota_BO1+nota_BO2+nota_BO3+nota_BO4)/4;
-    
-    alert(nota_BO_media);
-    //document.getElementById(nota_BO_media).value = nota_BO_media;
+                var nota_BO1 = parseFloat(document.getElementById('NOTA_BO_1').value);    
+                var nota_BO2 = parseFloat(document.getElementById('NOTA_BO_2').value);
+                var nota_BO3 = parseFloat(document.getElementById('NOTA_BO_3').value);
+                var nota_BO4 = parseFloat(document.getElementById('NOTA_BO_4').value);
+                var nota_BO5 = parseFloat(document.getElementById('NOTA_BO_5').value);
+                
+                var nota_BO_media = (nota_BO1+nota_BO2+nota_BO3+nota_BO4+nota_BO5)/4;
+                
+                document.getElementById("nota_BO_media").value = nota_BO_media;
 
-}
+            // Calcular nota de acceso
 
-</script>
+            var nota_NMB = parseFloat(document.getElementById('nota_NMB').value);
+            var nota_acceso = nota_BO_media*0.4 + nota_NMB*0.6;
+            document.getElementById("nota_CAO").value = nota_acceso;
+
+            }
+
+            </script>
     </head>
     <body>
         <h1>Explicación</h1>
@@ -52,19 +59,28 @@ function calcula_nota_BO(){
     </ul>
     <p>Si la nota de admisión es más alta que la que pide la carrera que quieres estudiar, ya está.</p>
         <h1>Calculadora nota EvAU</h1>
-        <h2>Fase obligatoria</h2>
+ 
+        <div class="tituloformulario">
+            Fase obligatoria
+        </div>
+        <div class="capaformulario">
+
         
             <div class="materia">
-                <input type="text" size="30" class="form-control input-sm materia2 " readonly="readonly" value="Lengua y Comentario de Texto" >
-                <input type="text" size="4" name="NOTA_BO_1" id="NOTA_BO_1">
+                <input type="text" size="30" class="materia" readonly="readonly" value="Lengua y literatura castellana II" >
+                <input type="text" size="2" name="NOTA_BO_1" id="NOTA_BO_1">
             </div>
             <div class="materia">
-                <input type="text" size="30" class="form-control input-sm materia2 " readonly="readonly" value="Primera lengua extranjera" >
-                <input type="text" size="4" name="NOTA_BO_2" id="NOTA_BO_2">
+                <input type="text" size="30" class="materia" readonly="readonly" value="Lengua y literatura catalana II" >
+                <input type="text" size="2" name="NOTA_BO_2" id="NOTA_BO_2">
             </div>
             <div class="materia">
-                <input type="text" size="30" class="form-control input-sm materia2 " readonly="readonly" value="Historia de españa" >
-                <input type="text" size="4" name="NOTA_BO_3" id="NOTA_BO_3">
+                <input type="text" size="30" class="materia" readonly="readonly" value="Historia de españa" >
+                <input type="text" size="2" name="NOTA_BO_3" id="NOTA_BO_3">
+            </div>
+            <div class="materia">
+                    <input type="text" size="30" class="materia" readonly="readonly" value="Primera lengua extranjera: inglés" >
+                    <input type="text" size="2" name="NOTA_BO_4" id="NOTA_BO_4">
             </div>
             <select name="" id="">
                 <option value="-1">Elige Troncal General de Modalidad...</option>
@@ -72,12 +88,12 @@ function calcula_nota_BO(){
                 <option value="2">Mates aplicadas CCSS II</option>
                 <option value="3">Mates II</option>
                 <option value="4">Fundamentos de arte II</option>
-            </select><input type="text" size="4" name="NOTA_BO_4" id="NOTA_BO_4">
+            </select><input type="text" size="2" name="NOTA_BO_5" id="NOTA_BO_5">
             <p><button  onclick="calcula_nota_BO()">Calcular</button></p>
-            <p>Nota media bachillerato: <input type="text" size="4" name="" id="nota_NMB"></p>
-            <p>Nota examen bloque obligatorio: <input type="text" size="4" name="nota_BO_media" id="nota_BO_media"></p>
-            <p>Calificación de acceso a la universidad: <input type="text" size="4" name="" id="nota_CAO"></p>
-        
+            <div class="descripcion">Nota media bachillerato</div><input type="text" size="4" name="nota_NMB" id="nota_NMB"></p>
+            <div class="descripcion">Nota examen bloque obligatorio</div><input type="text" size="4" name="nota_BO_media" id="nota_BO_media"></p>
+            <div class="descripcion">Calificación de acceso a la universidad</div><input type="text" size="4" name="" id="nota_CAO"></p>
+        </div>
 
     </body>
 </html>
