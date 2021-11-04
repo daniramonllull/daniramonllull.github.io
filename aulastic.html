@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+  min-height: 1500px;
+  background: lightcyan;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  background: lightcyan;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  background: lightyellow;
+}
+.right {
+  background-color: lightcyan;
+  float: right;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body style="font-family:Verdana;">
+  <div style="background-color:#bdc4c0;padding:15px;">
+    <img src="ramon llull.jfif" align="right" style="width:42%">
+    <h1 >Aules de Tic</h1>
+
+  <h3><b> <i> <a href="http://www.iesramonllull.net/">
+    L'Ies Ramon Llull</a>, on es formen els millors informàtics!</i></b></h3>
+</div>
+
+
+<div style="overflow:auto">
+  <div class="menu">
+    
+      <div class="menuitem"><a href="#TIC">1. Aula d'informàtica</a></div>
+      <div class="menuitem"><a href="#tecnologia">2. Aula de tecnologia industrial</a></div>
+      <div class="menuitem"><a href="#fusta">3. Aula de fusta </a></div>
+      
+  </div>
+  <div class="right">
+    <h2>On estan situades?</h2>
+    <p>Estan situades al fons esquerra (orientats cap a l'entrada de l'institut) de la planta baixa.</p>
+    <h2>Quina és l'aforament?</h2>
+    <p>L'aforament màxim és de 30 persones</p>
+    <h2>S'ha de pagar el material?</h2>
+    <p>És totalment gratuït!</p>
+  </div>
+  <br>
+
+  <div class="main">
+    <h2 id="TIC">Aula d'informàtica</h2>
+    <p>Aula amb noves torres de NOX i netway, una aula de molt bona qualitat. Aquesta aula està preparada per l'estudi del conjunt de totes les eines i programes que tracten, administren, transmeten i comparteixen la informació mitjançant suports tecnològics.</p>
+    <img src="tic.jpg" style="width:100%">
+  </div>
+ <br>
+
+  <br>
+  <div class="main">
+    <h2 id="tecnologia">Aula de tecnologia industrial</h2>
+    <p>Aula especialitzada per planificar i dissenyar processos de manufactura i equip que és un aspecte principal de la tecnologia industrial.</p>
+    <img src="Tecno 1.jpg" style="width:100%">
+  </div>
+<br>
+
+  <div class="main">
+    <h2 id="fusta">Aula de fusta</h2>
+    <p>Aula  especialitzada per el treball amb fusta i el seu estudi en la tecnologia.</p>
+    <img src="fusta.jpg" style="width:100%">
+  </div>
+<br>
+
+
+
+
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> <a href="http://www.iesramonllull.net/">
+ WEB OFICIAL DE L'IES RAMON LLULL</a></div>
+
+</body>
+</html>
