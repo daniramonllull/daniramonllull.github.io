@@ -2,67 +2,100 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
 
- <link rel="stylesheet" href="css/estilos.css">
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body style="font-family:Verdana;">
 
-  <header>
 <div style="background-color:#f1f1f1;padding:15px;">
-  <h1></h1>
-  <h3>Coneix el nostre institut</h3>
+  <h1>Planta Baja</h1>
+  <h2>Entrada al Institut i...</h2>
+  
 </div>
 
-<div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Institut Ramon Llull</h1>
-      <p>Coneix el nostre institut</p>
-      
-    </div>
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Inici</div>
+    <div class="menuitem"><a href="index.html">Planta Baixa</a> </div>
+    <div class="menuitem"> <a href="galeriafotos.html">Galeria d'imatges</a> </div>
+    <div class="menuitem"><a href="#coeducacio" >Coeducació</a> </div>
+    <div class="menuitem"><a href="#Altres" >Altres aules</a> </div>
   </div>
-</header>
-
-  <nav>
-    
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inici<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Planta baixa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Primer pis</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    
-  </nav>
-
-  <main>
-  <article>
-    <section>
-      <h2>L'institut</h2>
-    <p>L'IES Ramon Llull és un institut d'educació secundària de Palma. Està situat a l'avinguda de Portugal 2, a la plaça de l'Institut, popularment coneguda com a Plaça des Tub</p>
-    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Ramonllull_1.JPG" style="width:100%">
-    </section>
-  </article>
-</main>
 
 
+<div class="main">
+    <h2>...un llarg passadís</h2>
+    <p>En la planta baixa trobaràs les aules dels primers cursos de l'ESO. Si recorres el passadís principal per la dreta, trobaràs els banys, l'Aula Magna i al final les aules de tecnologia. Per la dreta, al final del passadís es troba la secretaria, els despatxos i la porta que dona a la plaça del tub.
+      <br>La planta baixa dona accés a les tres escales de l'edifici. La principal, just davant de l'entrada. La dels professors, a la dreta de l'edifici. I finalment, la de l'esquerra, més petita que les altres dues.
+      <br>Durant el passadís podrem veure els cartells informatius de cada departament, anuncis d'esdeveniments relacionats amb el centre i cartells de coeducació. A més, de tant en tant, l'institut munta uns projectes perquè tots els alumnes aprenguin del tema, aquests projectes poden ser culturals o relacionats amb problemes actuals. 
+    </p>
+    <img src="pasillo.jpg" style="width:100%">
+    <h2 id="coeducacio">Coeducació al centre</h2>
+    <p>
+      L'institut té un departament que tracta d'educar als alumnes en coses paral·leles al clàssic aprenentatge estudiantil. Aquest departament, anomenada de "coeducació" ensenya a partir de cartells, notícies o articles certs valors que estan en alça en la societat. Alguns d'aquests valors són: integracionisme, el feminisme o el respecte a les comunitats LGTBIQ+.
+      <br>Podem veure en l'imatge el tipus de cartells que el departament penja. 
+    </p>
+    <img width="150%" src="coeduca1.jpg" alt=""> 
+    <h2 id="Altres">Altres aules</h2>
+    <p>A part de les aules de classes, en la planta baixa es troben classes com la de música o la de plàstica. Aquestes aules estan al costat esquerre del passadís. L'aula de música, s'usa com a aula magna, en ella es fan xerrades, exposicions i altres projectes.
+      També es troben els tallers de tecnologia i com em dit, l'aula de plàstica. Aquesta darrera es troba al cantó del edifici i te fienstres que donen a el carrer i a un jardí del Edifici de Sa Riera de la UIB.
+    </p>
+</div>
 
-  <aside>
-    <h2>Parts</h2>
-    <p> L'edifici conté l'institut pròpiament dit, una escola de disseny gràfic i un edifici propietat de la Universitat de les Illes Balears (UIB), que rep el nom d'edifici de sa Riera</p>
-    <h2>Ensenyaments</h2>
-    <p>Actualment a l'IES Ramon Llull, s'imparteixen estudis d'Educació Secundària Obligatòria (ESO); d'Educació Postobligatòria (Batxillerat), dos Cicles Formatius de Grau Superior (Animació Sociocultural i Integració Social) i Formació Professional Bàsica (Títol Professional Bàsic en Informàtica d'Oficina)</p>
-  </aside>
+  <div class="right">
+  
+    <h2>Vols visitar-nos?</h2>
+    <p>Trobaràs un institut ple de vida!</p>
+    <img width="100%" src="video planta baja.gif" alt=""> 
+    <h2>[...]</h2> 
+    <p>La Planta baixa dona vistes a l'Avenida Portugal, un carrer concorregut que envolta el centre de Palma.</p>
+  </div>
+</div>
 
 
-
-<footer>Web diseñada por Daniel Moreno</footer>
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
 
 </body>
-</html>
+</html> 
