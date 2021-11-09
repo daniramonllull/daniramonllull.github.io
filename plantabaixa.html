@@ -31,7 +31,9 @@
   padding: 10px 15px;
   margin-top: 7px;
 }
-
+p{
+  font-size: 15;
+}
 A:link {text-decoration: none; color: white}
 A:visited {color: white;  font-family: arial; text-decoration: none }
 A:hover { color: black; font-family: arial; text-decoration: none }
@@ -70,12 +72,14 @@ A:hover { color: black; font-family: arial; text-decoration: none }
     <div class="menuitem"><a href="galeriafotos.html">Galeria d'imatges</a> </div>
     <div class="menuitem"><a href="#coeducacio" >Coeducació</a> </div>
     <div class="menuitem"><a href="#Altres" >Altres aules</a> </div>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize= '20px'" >Aumenta la lletra! </button>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize= '16px'"> Fes-la petita! </button>
   </div>
 
 
-<div class="main">
+<div class="main"id="demo">
     <h2>...un llarg passadís</h2>
-    <p>En la planta baixa trobaràs les aules dels primers cursos de l'ESO. Si recorres el passadís principal per la dreta, trobaràs els banys, l'Aula Magna i al final les aules de tecnologia. Per la dreta, al final del passadís es troba la secretaria, els despatxos i la porta que dona a la plaça del tub.
+    <p >En la planta baixa trobaràs les aules dels primers cursos de l'ESO. Si recorres el passadís principal per la dreta, trobaràs els banys, l'Aula Magna i al final les aules de tecnologia. Per la dreta, al final del passadís es troba la secretaria, els despatxos i la porta que dona a la plaça del tub.
       <br>La planta baixa dona accés a les tres escales de l'edifici. La principal, just davant de l'entrada. La dels professors, a la dreta de l'edifici. I finalment, la de l'esquerra, més petita que les altres dues.
       <br>Durant el passadís podrem veure els cartells informatius de cada departament, anuncis d'esdeveniments relacionats amb el centre i cartells de coeducació. A més, de tant en tant, l'institut munta uns projectes perquè tots els alumnes aprenguin del tema, aquests projectes poden ser culturals o relacionats amb problemes actuals. 
     </p>
