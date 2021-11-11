@@ -14,7 +14,7 @@
 }
 .menuitem {
   padding: 8px;
-  margin-top: 7px;
+
   border-bottom: 0.5px solid #cbffef;
   background: #f1f1f1;
 }
@@ -30,7 +30,7 @@
   float: right;
   width: 20%;
   padding: 10px 15px;
-  margin-top: 4px;
+
 }
 
 
@@ -39,7 +39,7 @@ p{
 }
 A:link {text-decoration: none; color: rgb(14, 13, 13)}
 A:visited {color: rgb(35, 20, 241);  font-family: arial; text-decoration: none }
-A:hover { color: black; font-family: arial; text-decoration: none }
+A:hover { color: rgb(14, 50, 214); font-family: arial; text-decoration: none }
 
 
 @media only screen and (max-width:800px) {
@@ -81,11 +81,17 @@ A:hover { color: black; font-family: arial; text-decoration: none }
   </div>
   <div class="right">
     <h2 style="color:#6f55e2">On estan situades?</h2>
-    <p>Estan situades al fons esquerra (orientats cap a l'entrada de l'institut) de la planta baixa.</p>
+    <p id="demo"style="display:none">Estan situades al fons esquerra (orientats cap a l'entrada de l'institut) de la planta baixa.</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Clica!</button>
+
     <h2 style="color:#6f55e2">Quina és l'aforament?</h2>
-    <p>L'aforament màxim és de 30 persones</p>
+    <p id="dos"style="display:none">L'aforament màxim és de 30 persones.</p>
+    <button type="button" onclick="document.getElementById('dos').style.display='block'">Clica!</button>
+
+  
     <h2 style="color:#6f55e2">S'ha de pagar el material?</h2>
-    <p>És totalment gratuït!</p>
+    <p  id="tres"style="display:none">És totalment gratuït!</p>
+    <button type="button" onclick="document.getElementById('tres').style.display='block'">Clica!</button>
   </div>
   <br>
 
