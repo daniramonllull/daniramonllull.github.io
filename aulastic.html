@@ -6,17 +6,26 @@
 * {
   box-sizing: border-box;
 }
-.menu {
-  float: left;
+.vertical-menu {
+    float: left;
   width: 20%;
-  min-height: 1393px;
-  background: #f1f1f1;
 }
-.menuitem {
-  padding: 8px;
 
-  border-bottom: 0.5px solid #cbffef;
-  background: #f1f1f1;
+.vertical-menu a {
+  background-color: #eee; 
+  color: black; 
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 .main {
   float: left;
@@ -54,7 +63,7 @@ A:hover { color: rgb(14, 50, 214); font-family: arial; text-decoration: none }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .vertical-menu, .main, .right {
     width: 100%;
   }
 }
@@ -71,14 +80,13 @@ A:hover { color: rgb(14, 50, 214); font-family: arial; text-decoration: none }
 </div>
 
 <div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem"><a href="https://daniramonllull.github.io/"><button style="color:#ff0000" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">INICI</button></a></div>
-
-      <div class="menuitem"><a href="#TIC">1. Aula d'informàtica</a></div>
-      <div class="menuitem"><a href="#tecnologia">2. Aula de tecnologia industrial</a></div>
-      <div class="menuitem"><a href="#fusta">3. Aula de fusta </a></div>
-      
-  </div>
+    <div class="vertical-menu">
+        <a href=https://daniramonllull.github.io/ class="active">Inici</a>
+        <a href="#Tic">1. Aula d'informàtica</a>
+        <a href="#tecnologia">2. Aula de tecnologia industrial</a>
+        <a href="#fusta">3. Aula de fusta</a>
+      </div>
+  
   <div class="right">
     <h2 style="color:#6f55e2">On estan situades?</h2>
     <p id="demo"style="display:none">Estan situades al fons esquerra (orientats cap a l'entrada de l'institut) de la planta baixa.</p>
