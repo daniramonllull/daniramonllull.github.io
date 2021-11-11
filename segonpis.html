@@ -73,8 +73,6 @@ h1{
 
  
 </div>
-  
- 
 
 <div style="overflow:auto">
   <div class="menu">
@@ -109,7 +107,7 @@ h1{
   </div> 
 
 
- 
+
 
   <div class="main">
     <p>El segon pis és aquell en què es localitzen majoritàriament els alumnes de 2n de batxillerat, a més de tenir alguns importants laboratoris, departaments i aules especials que milloren i fan més didàctic l'aprenentatge dels nostres alumnes.</p>
@@ -117,37 +115,82 @@ h1{
 
   
 
-    <div class="main" >
+  <div class="main" >
         <h2><a name="2a"></a>Aula 2.2 (2n BAT A)</h2>
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-        <p id="demo">En aquesta classe és a on els alumnes de 2n de Batxiller A reben majoritàriment les seves classes. La seva modalitat és la social/humanística.</p>
-         <img id="demo" src="img/imagenlabdefisica.jpg" style="width:100%">
-      </div>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Més infromació</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Menys informació</button>
+      
+        <div id="demo"  style="display:none">
+     
+        <p>En aquesta classe és a on els alumnes de 2n de Batxiller A reben majoritàriment les seves classes. La seva modalitat és la social/humanística.</p>
+        <img id="demo" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+        </div>
+
+      
+      
+    </div>
     
     <div class="main">
           <h2><a name="2b"></a>Aula Audiovisuals (2n BAT B)</h2>
+
+          <button type="button" onclick="document.getElementById('demo1').style.display='block'">Més infromació</button>
+          <button type="button" onclick="document.getElementById('demo1').style.display='none'">Menys informació</button>
+        
+          <div id="demo1"  style="display:none">
+       
           <p>Els alumnes de 2n de Batxiller B, que fan la modalitat social/humanística, cada dematí s'han de traslladar fins aquesta classe.</p>
-          <img src="img/imagenlabdefisica.jpg" style="width:100%">
+          <img id="demo1" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+          </div>
+
+
     </div>
 
 
     <div class="main">
             <h2><a name="2c"></a>Aula de química (2n BAT C)</h2>
+
+            <button type="button" onclick="document.getElementById('demo2').style.display='block'">Més infromació</button>
+            <button type="button" onclick="document.getElementById('demo2').style.display='none'">Menys informació</button>
+          
+            <div id="demo2"  style="display:none">
+         
             <p>Els científics de la salut i alumnes de 2n de batxillerat C es situen a l'aula de química.</p>
-             <img src="img/imagenlabdefisica.jpg" style="width:100%">
+            <img id="demo2" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+            </div>
+
+
     </div>
 
 
     <div class="main">
               <h2><a name="2d"></a>Laboratori de física (2n BAT D)</h2>
+
+              <button type="button" onclick="document.getElementById('demo3').style.display='block'">Més infromació</button>
+              <button type="button" onclick="document.getElementById('demo3').style.display='none'">Menys informació</button>
+            
+              <div id="demo3"  style="display:none">
+           
               <p>El laboratori de física queda reservat pels alumnes de 2n de batxillerat D, els quals duen a terme una modalitat cientificotecnologica.</p>
-               <img src="img/imagenlabdefisica.jpg" style="width:100%">
+              <img id="demo3" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+              </div>
+
+
+          
     </div>
 
    <div class="main">
                 <h2><a name="labq"></a>Laboratori de química</h2>
+
+                <button type="button" onclick="document.getElementById('demo4').style.display='block'">Més infromació</button>
+                <button type="button" onclick="document.getElementById('demo4').style.display='none'">Menys informació</button>
+              
+                <div id="demo4"  style="display:none">
+             
                 <p>Una de les aules didàctiques d'aquest pis és el laboratori de química, allà on es duen a terme reaccions, dissolucions i moltes altres proves.</p>
-                 <img src="img/imagenlabdefisica.jpg" style="width:100%">
+                <img id="demo4" src="img/imagenlabdefisica.jpg" style="width:100%"></p>
+                </div>
+
+
     </div>
 
               
